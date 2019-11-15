@@ -1,0 +1,257 @@
+@charset "utf-8";
+body{
+  font-family:"游ゴシック体";
+  font-size: 16px;
+  margin: 0 auto;
+  border: solid;
+}
+.inner{
+  margin: 0 auto;
+  width:1080px;
+}
+#header{
+  background-color:#FFFFFF;
+  height:75px;
+  position: fixed;
+  width:100%;
+}
+#header > .inner{
+  display: flex;
+}
+.header-logo{
+  color:  #1F91BE;
+  font-size:31px;
+  margin-bottom:28px;
+  margin-top:22px; 
+  margin-right: auto; 
+}
+.header-menus{
+  margin-right:0;
+  padding-bottom: 28px;
+  padding-top: 31px;
+  box-sizing: border-box;
+}
+.header-nav li{
+  display:inline-flex;
+  font-size: 16px;
+  list-style: none;
+  padding-right: 30px ;
+  box-sizing: border-box;
+}
+.header-nav li:last-child{
+  padding-right: 0;
+}
+#mv{
+  background-image: url(../img/top.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+  height:545px;
+  padding-top:75px;
+}
+#mv > .inner{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+#content{
+ padding-top: 100px;
+}
+#content > .inner{
+  display:flex;
+  box-sizing: border-box;
+}
+#primary{
+ display: block;
+}
+.section-about{
+  color:#1F91BE;
+  border-bottom: 4px solid #1F91BE;
+  font-size:32px;
+}
+.about-items{
+  margin-top:30px;
+  display: flex;
+}
+.about-item{
+  margin-right:60px;
+}
+.about-item-img{
+ margin-bottom:30px;
+}
+.about-item:last-child{
+ margin-right:0;
+}
+.section-news{
+  color:#1F91BE;
+  border-bottom: 4px solid #1F91BE;
+  font-size:32px; 
+  padding-top:70px;
+}
+.news-items{
+  padding-top: 10px;
+  padding-bottom:20px;
+  box-sizing: border-box;
+}
+.news-item{
+ font-size: 14px;
+ margin-top:20px;
+ border-bottom: 1px solid ;
+ display:flex;
+}
+.news-item-time{
+  padding-left: 0.5px;
+  width:75%
+}
+.news-item-content{
+  padding-right: 0 ;
+  padding-left:30px;
+  margin-bottom:20px;
+  box-sizing: border-box;
+  width:400%; 
+}
+.new-item-icon{
+  margin: 0 0 0 auto;
+}
+.new-item-icon a{
+  color: #1F91BE;
+  border: 1px solid #1F91BE;
+  padding: 0 10px;
+  margin-bottom:99px;
+  float: right
+}
+#secondary{
+  display:inline-block;
+  margin-right:0;
+  margin-bottom:0;
+  padding-left: 80px;
+}
+.widgets{
+  width:100%;
+}
+.widget-item-img{
+  padding-bottom: 30px;
+}
+.widget-item-img :last-child{
+  margin-bottom:0;
+}
+.widget-categories{
+  margin-bottom: 108px;
+}
+.widget-title{
+  color:#1F91BE;
+  font-size: 24px;
+  border-bottom: solid 3px #1F91BE;;
+}
+.widget-categories ul{
+  margin-top: 19px;
+  box-sizing: border-box;
+}
+.widget-categories li{
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  list-style: none;
+}
+.widget-categories li:last-child{
+  padding-bottom:0;
+}
+#footer{
+  background: #c7c7c7;
+  margin-bottom:0;
+  height: 50px;
+  width:100%;
+}
+#footer > .inner{
+  padding-top: 18px;
+  padding-bottom:18px;
+}
+p.copy{
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: center;
+  width:100%;
+}
+@media screen and (max-width: 767px){ 
+  .inner{
+   margin:0 auto;
+   width:320px;
+  }
+  #header{
+    height:82px;
+    width:98%;
+  }
+  #header > .inner{
+    display: block;
+  }
+  .header-logo{
+    font-size:18px;
+    margin-bottom:10px;
+    margin-top:20px; 
+  }
+  .header-menus{
+    margin-left:0;
+    padding-top:0;
+    padding-bottom: 20px;
+  }
+  .header-nav li{
+    font-size: 14px;
+    padding-right: 12px ;
+  }
+  #mv{
+    height:160px;
+    margin-top:82px;
+    width:100%;
+  }
+  #content{
+    padding-top:20px;
+  }
+ #content > .inner{
+    display:block;
+  }
+  .section-about{
+    font-size:22px;
+  }
+  .about-items {
+    margin-top: 20px;
+    display:block;
+  }
+  .about-item{
+    margin-right:0;
+  }
+  .about-item-img {
+    margin-bottom: 20px;
+  }
+  .about-item:last-child {
+    margin-top:20px;
+  }  
+  .section-news{
+    padding-top: 60px;
+    font-size:22px;
+  }
+  .news-items {
+    padding-top: 9px;
+    padding-bottom: 19px;
+  }
+  .news-item {
+    display: block;
+  }
+  .news-item-content {
+    padding-right: 0;
+    padding-left: 0;
+    width:342px;
+  }
+  .new-item-icon a {
+    margin-bottom: 60px;
+    font-size:14px;
+    padding: 13px 39px;
+    margin-right:99px;
+  }
+  .widget-title {
+   font-size:22px;
+  }
+
+#secondary{
+  padding-left:0;
+ }
+ .header-nav li{
+}
